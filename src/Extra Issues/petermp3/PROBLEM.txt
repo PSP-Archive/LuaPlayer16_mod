@@ -1,0 +1,2 @@
+No idea whats wrong. The mp3.cpp + mp3.h does work with other
+c/c++ apps, but not with lua player.

@@ -1,0 +1,2 @@
+see http://wiki.ps2dev.org/psp:lua_player:functions for a function reference
+added functions can be found at http://www.cools.biaklan.com/luamod.html

@@ -1,0 +1,5 @@
+This regular lua3d.cpp (found 1 folder up) is a streamlined version of the
+one seen in this directory. The reason being is that some of the things
+(gu list and others) dont work correctly. If you know how to fix it, go for
+it and if you want to send it to me (via pm) on qj, evilmana, or dcemu
+under the name cools.

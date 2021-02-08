@@ -1,0 +1,80 @@
+25th December 1998                                                        v1.0
+=======================================================================
+
+Title		:Toyota Supra RZ version 3
+Filenames	:C_CAR2_50, Supra.txt  
+Author		:Bryan Spence
+Email Address	:bspence@tinet.ie 
+Homepage        :
+Description	:I'm Irish
+Other Works	:F1 Cars: 98-94
+                 Ferrari F355	
+                 MG Metro 6R4
+                 Toyota Corolla WRC
+		 Ford RS2000
+                 BS Super Gt
+   		 BS Roadster			
+Thanks to	:Me. Pat Painter for shading tips
+                  
+
+=======================================================================
+
+* Construction *
+
+Base            :Roadster 
+Editor(s) used	:Paint Shop Pro 4.14
+Known Bugs	:ask Valdez 
+Build Time	:2 hours
+
+
+* Installation *
+
+Just use the GTACARS
+
+...
+
+* Settings *  
+
+Convertable Tag = 0
+Max Speed = 38
+Weight = 7	
+Acceleration = 25
+Thrust = 19
+
+...
+
+ 
+
+* Other Information *
+
+Any Comments, suggestions for improvements, let me know.
+
+
+ ...
+
+
+* Copyright / Permissions *
+This car may be freely distributed as long as the Supra.txt with this
+Archive is included and NO MONEY is asked for it.
+
+This car may be used as a base for your own work as long as you credit me.
+ 
+This car may not be used in ANY COMMERCIAL CD or carset without my
+prior Permission.
+
+...
+
+
+* Disclaimer *
+
+The contained files are provided "as is" without warranty of
+any kind, either expressed or implied. The author will not be
+held responsible for any losses incurred.
+
+...
+
+
+=======================================================================
+Bryan Spence 25/12/98
+
+     

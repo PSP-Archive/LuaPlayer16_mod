@@ -1,0 +1,98 @@
+v0.16 (all changes for this version by Shine)
+================================================
+ - Wlan:getIPAddress bugfix: now it returns nil on error and the
+   IP address otherwise
+ - DNS resolving. Now you can write
+   Socket.connect("www.luaplayer.org", 80) instead of
+   Socket.connect("212.227.39.202", 80),
+   thanks to ideas how to use the resolver lib from PSPRadio
+ - when loading JPEGs, the file was not closed
+ - System.md5sum bugfixing for the Windows version
+ - Wlan.useConnectionConfig index is 1 based instead of 0 based, like usual in Lua
+ - System.powerTick added: this prevents power off, now you can nail
+   your PSP on a wall for your electronic painting :-)
+ - System.createDirectory, System.removeDirectory and System.removeFile added
+
+v0.15
+==========
+ - timer bug fixed (was bug in PSPSDK) [mrbrown]
+ - wlan socket support (based on PspPet's "WiFi Multi-Test .03") [Shine]
+ - changed sceGu* and sceGum* functions to Gu.* and Gum.* [Shine]
+ - System.getFreeMemory added [Shine]
+ - Freetype added, with 2 default fonts (see http://www.gnome.org/fonts/ for the licence) [Shine]
+
+v0.14
+==========
+ - IrDA support [Shine]
+ - Windows Emulator [sweetlilmre]
+     sceIoD* functionality added for System.listDirectory().
+     sceGuClearColor and sceGuClear implemented.
+     flicker reduction via GL / PSP drawing sync
+     attempt to improve sound sync by yeilding in glutIdleFunc() func.
+ - possible signed bug for timer fixed [Shine]
+
+v0.13
+==========
+ - screen:clear bugfix (was always black) [Shine]
+ - updated Windows version with sound [sweetlilmre]
+ - JPEG image/screen load and save functionality [Shine]
+
+v0.12
+==========
+ - pixel format changed to true color [Durante / Shine]
+ - initial GU mapping [Shine]
+
+v0.11 (all changes for this version by Shine)
+================================================
+ - Added System.md5sum and filelist.txt debug ouput on startup failure in boot.lua
+ - changed case sensitivity handling in boot.lua for problems with Windows 98
+ - now Image.createEmpty accepts 512x512 pixel sizes
+ - internal image width and height needs not to be the same size
+ - max image size can be 512x512 now (larger are not allowed with GU blit)
+ - System.sioInit, sioWrite and sioRead implemented for serial port support
+   (see http://www.luaplayer.org/sio/readme.html and http://nil.rpc1.org/psp/remote.html
+    for information about the hardware interface)
+ - new Timer class and System.sleep function
+ - fixed timezone bug
+ - moved Starfield and SIO Echo example to Applications
+
+v0.10
+==========
+ - Added the "Bitwise operators and hexadecimal support" patch from
+   http://lua-users.org/wiki/LuaPowerPatches :
+        - Hexadecimal support for 0xXXX in numeric literals. 
+        - Hexadecimal support for '\xXX' characters within strings. 
+        - Infix bitwise operators for AND (&), OR (|) and XOR (#). 
+        - Unary bitwise negation using # alone.  [Shine]
+ - Changed the number type to float (more than 4 times faster calculations) 
+   (requires recompilation of the lua libraries from svn) [Shine]
+ - "save" function writes PNG format now [Shine]
+ - Restructured files into src/ [Nevyn]
+ - Changed the main script file to System/system.lua [Nevyn]
+ - Rewrote the Makefiles and readmes to be more user-friendly.  [Nevyn]
+ - Changed startup load sequence (see the lua dev readme) [Nevyn]
+ - Made a procedure for making standalone LP apps [Nevyn]
+ - keyboard mapping fixed in PC version [Shine]
+ - bitmask operations added in controls class [Shine]
+ - added battery functions to System
+ - os.time() returns a userdata instead of a number because of problems
+   with the float-precision, so you have to use os.difftime instead of
+   doing calculations with the result
+ 
+v0.9
+==========
+- bugfixing clearImage and clearScreen [Shine]
+- sceKernelDcacheWritebackInvalidateAll only needed before sceGu functions, when reading modified main memory [Shine]
+- speed improved for fillImageRect, fillScreenRect, blitAlphaImageToImage, blitImageToImage and drawLine [Shine]
+
+v0.7
+==========
+ - Added sound and music through mikmodlib
+ - Redesigned the API (note: apps made for =<0.6 will need to be rewritten)
+ - Updated Lowser to 0.15
+ - Added functions for USB disk mode
+ - Added samples for music, rotation, fractal
+ 
+v0.6 and earlier
+========
+(Undocumented)
